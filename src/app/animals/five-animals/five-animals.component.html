@@ -1,0 +1,9 @@
+    <div class="card2">
+      <h1>List of 5 animals</h1>
+    </div>
+    <div *ngFor="let animal of animals" class="card2">
+      <h3>{{ animal.name }}</h3>
+      <p>Species: {{ animal.species }}</p>
+      <p>Likes: {{ animal.foods.likes.join(', ') }}</p>
+      <p>Dislikes: {{ animal.foods.dislikes.join(', ') }}</p>
+    </div>
